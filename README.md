@@ -27,7 +27,7 @@ Blog4Git requires you to write your content in [Markdown](https://github.com/ada
 
 ### Registering your blog in the `blog.json` file
 
-Honestly speaking, this file is the heart of of everything and it lives with all your blogs, under the `blogs/` folder. Let's suppose you wrote something about Internet Doggos and saved it as `doggos.md` in the `posts/` folder, then you would register your blog in the `blog.json` file like this.
+Honestly speaking, this file is the heart of everything and it lives with all your blogs, under the `blogs/` folder. Let's suppose you wrote something about Internet Doggos and saved it as `doggos.md` in the `posts/` folder, then you would register your blog in the `blog.json` file like this.
 
 ```json
 {
@@ -77,4 +77,4 @@ you'll break your own website.
 
 ---
 
-That's pretty much it. If you like, you can head over to the [in-depth instructions](https://jgodara.github.io/blog4git/blogs/#getting-started) on how to leverage everything out of Blog4Git, or customizing it. Or look at [the one that I already use on my website](https://jgodara.github.io/blogs)!
+That's pretty much it. If you like, you can head over to the [in-depth instructions](https://jgodara.github.io/blog4git/blogs/#getting-started) on how to leverage everything out of Blog4Git, or customize it. Or look at [the one that I already use on my website](https://jgodara.github.io/blogs)!
