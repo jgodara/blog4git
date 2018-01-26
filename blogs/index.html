@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title></title>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="//highlightjs.org/static/demo/styles/atom-one-dark.css">
+  </head>
+  <body onhashchange="onHashChange()">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="pull-left">
+          <h1><a href="JavaScript:b4ghome();">Blog4Git</a></h1>
+          <h5>Made with <i class="fa fa-heart"></i> by <a href="https://jgodara.github.io">Jay</a></h3>
+        </div><!--//pull-left -->
+      </div><!-- //container -->
+    </header><!-- //header -->
+
+    <div class="container sections-wrapper">
+      <div class="row">
+        <div class="primary col-md-8 col-sm-12 col-xs-12">
+          <section class="section">
+            <div class="section-inner" id="b4g-section-main"></div>
+          </section>
+        </div>
+
+        <div class="secondary col-md-4 col-sm-12 col-xs-12">
+             <aside class="info aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Featured Blogs</h2>
+                    <div class="content" id="b4g-blogs-featured">
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//aside-->
+          </div>
+      </div>
+    </div>
+
+    <!-- templates -->
+
+    <script type="x-templ-mustache" id="section-blog-listing">
+      <h2 class="heading">Recent blogs</h2>
+      <div class="content" id="b4g-blogs-all"></div>
+    </script>
+
+    <script type="x-templ-mustache" id="blog-listing-mustache">
+      {{#all}}
+        <h3 class="title">
+          <a href="#{{id}}">{{title}}</a>
+          <small>{{#time.h}}{{time.h}}h{{/time.h}}</small>
+          <small>{{#time.m}}{{time.m}}m{{/time.m}}</small>
+          <small>{{#time.s}}{{time.s}}s{{/time.s}}</small>
+          <small>ago.</small>
+        </h3>
+        <p data-type="b4g-data-shortdesc" data-id="{{id}}"></p>
+        <hr />
+      {{/all}}
+    </script>
+
+    <script type="x-templ-mustache" id="featured-blog-mustache">
+      {{#featured}}
+        <ul>
+          <li><a href="#{{id}}">{{title}}</a></li>
+        </ul>
+      {{/featured}}
+    </script>
+
+    <script type="text/javascript">
+      var blogTitle = 'Blog4Git';
+    </script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="//cdn.rawgit.com/showdownjs/showdown/master/dist/showdown.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+  </body>
+</html>
